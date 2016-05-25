@@ -1,12 +1,14 @@
 {
   "name": "promiseproxy-chrome",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extremely lightweight Proxy-based promisified Chrome API wrapper",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "promiseproxy": "^1.0.1"
+  },
   "devDependencies": {
     "sinon-chrome": "^1.1.2",
     "tape": "^4.5.1"

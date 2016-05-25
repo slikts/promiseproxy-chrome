@@ -1,0 +1,298 @@
+{
+   "/extensions/bookmarks":[
+      " chrome.bookmarks.get(string or array of string idOrIdList, function callback) ",
+      " chrome.bookmarks.getChildren(string id, function callback) ",
+      " chrome.bookmarks.getRecent(integer numberOfItems, function callback) ",
+      " chrome.bookmarks.getTree(function callback) ",
+      " chrome.bookmarks.getSubTree(string id, function callback) ",
+      " chrome.bookmarks.search(string or object query, function callback) ",
+      " chrome.bookmarks.create(object bookmark, function callback) ",
+      " chrome.bookmarks.move(string id, object destination, function callback) ",
+      " chrome.bookmarks.update(string id, object changes, function callback) ",
+      " chrome.bookmarks.remove(string id, function callback) ",
+      " chrome.bookmarks.removeTree(string id, function callback) "
+   ],
+   "/extensions/browserAction":[
+      " chrome.browserAction.getTitle(object details, function callback) ",
+      " chrome.browserAction.setIcon(object details, function callback) ",
+      " chrome.browserAction.getPopup(object details, function callback) ",
+      " chrome.browserAction.getBadgeText(object details, function callback) ",
+      " chrome.browserAction.getBadgeBackgroundColor(object details, function callback) "
+   ],
+   "/extensions/browsingData":[
+      " chrome.browsingData.settings(function callback) ",
+      " chrome.browsingData.remove( RemovalOptions options,  DataTypeSet dataToRemove, function callback) ",
+      " chrome.browsingData.removeAppcache( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeCache( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeCookies( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeDownloads( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeFileSystems( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeFormData( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeHistory( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeIndexedDB( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeLocalStorage( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removePluginData( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removePasswords( RemovalOptions options, function callback) ",
+      " chrome.browsingData.removeWebSQL( RemovalOptions options, function callback) "
+   ],
+   "/extensions/commands":[
+      " chrome.commands.getAll(function callback) "
+   ],
+   "/extensions/contentSettings":[
+
+   ],
+   "/extensions/contextMenus":[
+      " chrome.contextMenus.create(object createProperties, function callback) ",
+      " chrome.contextMenus.update(integer or string id, object updateProperties, function callback) ",
+      " chrome.contextMenus.remove(integer or string menuItemId, function callback) ",
+      " chrome.contextMenus.removeAll(function callback) "
+   ],
+   "/extensions/cookies":[
+      " chrome.cookies.get(object details, function callback) ",
+      " chrome.cookies.getAll(object details, function callback) ",
+      " chrome.cookies.set(object details, function callback) ",
+      " chrome.cookies.remove(object details, function callback) ",
+      " chrome.cookies.getAllCookieStores(function callback) "
+   ],
+   "/extensions/debugger":[
+      " chrome.debugger.attach( Debuggee target, string requiredVersion, function callback) ",
+      " chrome.debugger.detach( Debuggee target, function callback) ",
+      " chrome.debugger.sendCommand( Debuggee target, string method, object commandParams, function callback) ",
+      " chrome.debugger.getTargets(function callback) "
+   ],
+   "/extensions/desktopCapture":[
+      " integer chrome.desktopCapture.chooseDesktopMedia(array of DesktopCaptureSourceType sources,  tabs.Tab targetTab, function callback) "
+   ],
+   "/extensions/devtools_inspectedWindow":[
+      " chrome.devtools.inspectedWindow.eval(string expression, object options, function callback) ",
+      " chrome.devtools.inspectedWindow.getResources(function callback) "
+   ],
+   "/extensions/devtools_network":[
+      " chrome.devtools.network.getHAR(function callback) "
+   ],
+   "/extensions/devtools_panels":[
+      " chrome.devtools.panels.create(string title, string iconPath, string pagePath, function callback) ",
+      " chrome.devtools.panels.setOpenResourceHandler(function callback) ",
+      " chrome.devtools.panels.openResource(string url, integer lineNumber, function callback) "
+   ],
+   "/extensions/documentScan":[
+      " chrome.documentScan.scan(object options, function callback) "
+   ],
+   "/extensions/downloads":[
+      " chrome.downloads.download(object options, function callback) ",
+      " chrome.downloads.search(object query, function callback) ",
+      " chrome.downloads.pause(integer downloadId, function callback) ",
+      " chrome.downloads.resume(integer downloadId, function callback) ",
+      " chrome.downloads.cancel(integer downloadId, function callback) ",
+      " chrome.downloads.getFileIcon(integer downloadId, object options, function callback) ",
+      " chrome.downloads.erase(object query, function callback) ",
+      " chrome.downloads.removeFile(integer downloadId, function callback) ",
+      " chrome.downloads.acceptDanger(integer downloadId, function callback) "
+   ],
+   "/extensions/events":[
+
+   ],
+   "/extensions/extension":[
+      " chrome.extension.isAllowedIncognitoAccess(function callback) ",
+      " chrome.extension.isAllowedFileSchemeAccess(function callback) "
+   ],
+   "/extensions/extensionTypes":[
+
+   ],
+   "/extensions/fontSettings":[
+      " chrome.fontSettings.clearFont(object details, function callback) ",
+      " chrome.fontSettings.getFont(object details, function callback) ",
+      " chrome.fontSettings.setFont(object details, function callback) ",
+      " chrome.fontSettings.getFontList(function callback) ",
+      " chrome.fontSettings.clearDefaultFontSize(object details, function callback) ",
+      " chrome.fontSettings.getDefaultFontSize(object details, function callback) ",
+      " chrome.fontSettings.setDefaultFontSize(object details, function callback) ",
+      " chrome.fontSettings.clearDefaultFixedFontSize(object details, function callback) ",
+      " chrome.fontSettings.getDefaultFixedFontSize(object details, function callback) ",
+      " chrome.fontSettings.setDefaultFixedFontSize(object details, function callback) ",
+      " chrome.fontSettings.clearMinimumFontSize(object details, function callback) ",
+      " chrome.fontSettings.getMinimumFontSize(object details, function callback) ",
+      " chrome.fontSettings.setMinimumFontSize(object details, function callback) "
+   ],
+   "/extensions/gcm":[
+      " chrome.gcm.register(array of string senderIds, function callback) ",
+      " chrome.gcm.unregister(function callback) ",
+      " chrome.gcm.send(object message, function callback) "
+   ],
+   "/extensions/history":[
+      " chrome.history.search(object query, function callback) ",
+      " chrome.history.getVisits(object details, function callback) ",
+      " chrome.history.addUrl(object details, function callback) ",
+      " chrome.history.deleteUrl(object details, function callback) ",
+      " chrome.history.deleteRange(object range, function callback) ",
+      " chrome.history.deleteAll(function callback) "
+   ],
+   "/extensions/i18n":[
+      " chrome.i18n.getAcceptLanguages(function callback) ",
+      " chrome.i18n.detectLanguage(string text, function callback) "
+   ],
+   "/extensions/identity":[
+      " chrome.identity.getAccounts(function callback) ",
+      " chrome.identity.getAuthToken(object details, function callback) ",
+      " chrome.identity.getProfileUserInfo(function callback) ",
+      " chrome.identity.removeCachedAuthToken(object details, function callback) ",
+      " chrome.identity.launchWebAuthFlow(object details, function callback) "
+   ],
+   "/extensions/idle":[
+      " chrome.idle.queryState(integer detectionIntervalInSeconds, function callback) "
+   ],
+   "/extensions/input_ime":[
+      " chrome.input.ime.setComposition(object parameters, function callback) ",
+      " chrome.input.ime.clearComposition(object parameters, function callback) ",
+      " chrome.input.ime.commitText(object parameters, function callback) ",
+      " chrome.input.ime.sendKeyEvents(object parameters, function callback) ",
+      " chrome.input.ime.setCandidateWindowProperties(object parameters, function callback) ",
+      " chrome.input.ime.setCandidates(object parameters, function callback) ",
+      " chrome.input.ime.setCursorPosition(object parameters, function callback) ",
+      " chrome.input.ime.setMenuItems(object parameters, function callback) ",
+      " chrome.input.ime.updateMenuItems(object parameters, function callback) ",
+      " chrome.input.ime.deleteSurroundingText(object parameters, function callback) "
+   ],
+   "/extensions/management":[
+      " chrome.management.getAll(function callback) ",
+      " chrome.management.get(string id, function callback) ",
+      " chrome.management.getSelf(function callback) ",
+      " chrome.management.getPermissionWarningsById(string id, function callback) ",
+      " chrome.management.getPermissionWarningsByManifest(string manifestStr, function callback) ",
+      " chrome.management.setEnabled(string id, boolean enabled, function callback) ",
+      " chrome.management.uninstall(string id, object options, function callback) ",
+      " chrome.management.uninstallSelf(object options, function callback) ",
+      " chrome.management.launchApp(string id, function callback) ",
+      " chrome.management.createAppShortcut(string id, function callback) ",
+      " chrome.management.setLaunchType(string id,  LaunchType launchType, function callback) ",
+      " chrome.management.generateAppForLink(string url, string title, function callback) "
+   ],
+   "/extensions/notifications":[
+      " chrome.notifications.create(string notificationId,  NotificationOptions options, function callback) ",
+      " chrome.notifications.update(string notificationId,  NotificationOptions options, function callback) ",
+      " chrome.notifications.clear(string notificationId, function callback) ",
+      " chrome.notifications.getAll(function callback) ",
+      " chrome.notifications.getPermissionLevel(function callback) "
+   ],
+   "/extensions/omnibox":[
+
+   ],
+   "/extensions/pageAction":[
+      " chrome.pageAction.getTitle(object details, function callback) ",
+      " chrome.pageAction.setIcon(object details, function callback) ",
+      " chrome.pageAction.getPopup(object details, function callback) "
+   ],
+   "/extensions/pageCapture":[
+      " chrome.pageCapture.saveAsMHTML(object details, function callback) "
+   ],
+   "/extensions/permissions":[
+      " chrome.permissions.getAll(function callback) ",
+      " chrome.permissions.contains( Permissions permissions, function callback) ",
+      " chrome.permissions.request( Permissions permissions, function callback) ",
+      " chrome.permissions.remove( Permissions permissions, function callback) "
+   ],
+   "/extensions/power":[
+
+   ],
+   "/extensions/printerProvider":[
+
+   ],
+   "/extensions/privacy":[
+
+   ],
+   "/extensions/proxy":[
+
+   ],
+   "/extensions/runtime":[
+      " chrome.runtime.getBackgroundPage(function callback) ",
+      " chrome.runtime.openOptionsPage(function callback) ",
+      " chrome.runtime.setUninstallURL(string url, function callback) ",
+      " chrome.runtime.requestUpdateCheck(function callback) ",
+      " chrome.runtime.getPlatformInfo(function callback) ",
+      " chrome.runtime.getPackageDirectoryEntry(function callback) "
+   ],
+   "/extensions/sessions":[
+      " chrome.sessions.getRecentlyClosed( Filter filter, function callback) ",
+      " chrome.sessions.getDevices( Filter filter, function callback) ",
+      " chrome.sessions.restore(string sessionId, function callback) "
+   ],
+   "/extensions/storage":[
+
+   ],
+   "/extensions/system_cpu":[
+      " chrome.system.cpu.getInfo(function callback) "
+   ],
+   "/extensions/system_memory":[
+      " chrome.system.memory.getInfo(function callback) "
+   ],
+   "/extensions/system_storage":[
+      " chrome.system.storage.getInfo(function callback) ",
+      " chrome.system.storage.ejectDevice(string id, function callback) ",
+      " chrome.system.storage.getAvailableCapacity(string id, function callback) "
+   ],
+   "/extensions/tabCapture":[
+      " chrome.tabCapture.capture(object options, function callback) ",
+      " chrome.tabCapture.getCapturedTabs(function callback) "
+   ],
+   "/extensions/tabs":[
+      " chrome.tabs.get(integer tabId, function callback) ",
+      " chrome.tabs.getCurrent(function callback) ",
+      " chrome.tabs.getSelected(integer windowId, function callback) ",
+      " chrome.tabs.getAllInWindow(integer windowId, function callback) ",
+      " chrome.tabs.create(object createProperties, function callback) ",
+      " chrome.tabs.duplicate(integer tabId, function callback) ",
+      " chrome.tabs.query(object queryInfo, function callback) ",
+      " chrome.tabs.highlight(object highlightInfo, function callback) ",
+      " chrome.tabs.update(integer tabId, object updateProperties, function callback) ",
+      " chrome.tabs.move(integer or array of integer tabIds, object moveProperties, function callback) ",
+      " chrome.tabs.reload(integer tabId, object reloadProperties, function callback) ",
+      " chrome.tabs.remove(integer or array of integer tabIds, function callback) ",
+      " chrome.tabs.detectLanguage(integer tabId, function callback) ",
+      " chrome.tabs.captureVisibleTab(integer windowId, object options, function callback) ",
+      " chrome.tabs.executeScript(integer tabId, object details, function callback) ",
+      " chrome.tabs.insertCSS(integer tabId, object details, function callback) ",
+      " chrome.tabs.setZoom(integer tabId, double zoomFactor, function callback) ",
+      " chrome.tabs.getZoom(integer tabId, function callback) ",
+      " chrome.tabs.setZoomSettings(integer tabId,  ZoomSettings zoomSettings, function callback) ",
+      " chrome.tabs.getZoomSettings(integer tabId, function callback) "
+   ],
+   "/extensions/topSites":[
+      " chrome.topSites.get(function callback) "
+   ],
+   "/extensions/tts":[
+      " chrome.tts.speak(string utterance, object options, function callback) ",
+      " chrome.tts.isSpeaking(function callback) ",
+      " chrome.tts.getVoices(function callback) "
+   ],
+   "/extensions/ttsEngine":[
+
+   ],
+   "/extensions/types":[
+
+   ],
+   "/extensions/webNavigation":[
+      " chrome.webNavigation.getFrame(object details, function callback) ",
+      " chrome.webNavigation.getAllFrames(object details, function callback) "
+   ],
+   "/extensions/webRequest":[
+      " chrome.webRequest.handlerBehaviorChanged(function callback) "
+   ],
+   "/extensions/webstore":[
+
+   ],
+   "/extensions/windows":[
+      " chrome.windows.get(integer windowId, object getInfo, function callback) ",
+      " chrome.windows.getCurrent(object getInfo, function callback) ",
+      " chrome.windows.getLastFocused(object getInfo, function callback) ",
+      " chrome.windows.getAll(object getInfo, function callback) ",
+      " chrome.windows.create(object createData, function callback) ",
+      " chrome.windows.update(integer windowId, object updateInfo, function callback) ",
+      " chrome.windows.remove(integer windowId, function callback) "
+   ],
+   "/extensions/alarms":[
+      " chrome.alarms.get(string name, function callback) ",
+      " chrome.alarms.getAll(function callback) ",
+      " chrome.alarms.clear(string name, function callback) ",
+      " chrome.alarms.clearAll(function callback) "
+   ]
+}

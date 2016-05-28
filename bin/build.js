@@ -25,4 +25,5 @@ flat.forEach(([path, index]) => path.reduce((obj, key, i, arr) => {
 }, schema))
 
 const formatted = JSON.stringify(schema, null, 2).replace(/"/g, '')
-console.log(`module.exports = ${formatted}`)
+console.log(`/* Generated from api.json */
+module.exports = ${formatted}`)

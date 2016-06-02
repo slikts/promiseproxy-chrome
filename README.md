@@ -33,7 +33,7 @@ npm run build
 
 Use in console on each page of the Chrome API docs:
 ```js
-localStorage.methods = JSON.stringify(Object.assign(JSON.parse(localStorage.methods), { [location.pathname]: $$('#toc .pln').filter(x => /callback/.test(x.textContent)).map(x => x.closest('.prettyprint').textContent) }))
+localStorage.methods = JSON.stringify(Object.assign(JSON.parse(localStorage.methods), { [location.pathname]: $$('#toc .pln').filter(x => /callback/i.test(x.textContent)).map(x => x.closest('.prettyprint').textContent) }))
 ```
 
 Copy contents of `localStorage.methods` to `api.json`.

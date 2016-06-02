@@ -1,3 +1,4 @@
+/* Generated from api.json */
 module.exports = {
   bookmarks: {
     get: 1,
@@ -89,6 +90,7 @@ module.exports = {
     acceptDanger: 1
   },
   extension: {
+    sendRequest: 2,
     isAllowedIncognitoAccess: 0,
     isAllowedFileSchemeAccess: 0
   },
@@ -188,6 +190,8 @@ module.exports = {
     openOptionsPage: 0,
     setUninstallURL: 1,
     requestUpdateCheck: 0,
+    sendMessage: 3,
+    sendNativeMessage: 2,
     getPlatformInfo: 0,
     getPackageDirectoryEntry: 0
   },
@@ -216,6 +220,8 @@ module.exports = {
   tabs: {
     get: 1,
     getCurrent: 0,
+    sendRequest: 2,
+    sendMessage: 3,
     getSelected: 1,
     getAllInWindow: 1,
     create: 1,
@@ -250,6 +256,9 @@ module.exports = {
   webRequest: {
     handlerBehaviorChanged: 0
   },
+  webstore: {
+    install: 1
+  },
   windows: {
     get: 2,
     getCurrent: 1,
@@ -264,5 +273,10 @@ module.exports = {
     getAll: 0,
     clear: 1,
     clearAll: 0
+  },
+  platformKeys: {
+    selectClientCertificates: 1,
+    getKeyPair: 2,
+    verifyTLSServerCertificate: 1
   }
 }

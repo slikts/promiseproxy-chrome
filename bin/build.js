@@ -6,7 +6,7 @@ const data = JSON.parse(readFileSync('api.json'))
 
 const parse = ([x, y]) => {
   const path = x.split('.').slice(1)
-  const index = y.split(',').findIndex(z => /callback/.test(z))
+  const index = y.split(',').findIndex(z => /callback/i.test(z))
   return [path, index]
 }
 

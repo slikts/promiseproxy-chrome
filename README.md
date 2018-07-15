@@ -1,4 +1,4 @@
-[![view on npm](http://img.shields.io/npm/v/promiseproxy-chrome.svg)](https://www.npmjs.org/package/promiseproxy-chrome)
+[![view on npm](http://img.shields.io/npm/v/promiseproxy-chrome.svg)](https://www.npmjs.org/package/promiseproxy-chrome) [![Greenkeeper badge](https://badges.greenkeeper.io/slikts/promiseproxy-chrome.svg)](https://greenkeeper.io/)
 
 # Promisified Chrome API
 
